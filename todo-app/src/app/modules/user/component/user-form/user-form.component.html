@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>User Form</h1>
+  <form class="form" role="form" autocomplete="off" (submit)="addUsers(form)" #form="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="alterEgo">Email</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="power">User Status</label>
+      <select class="form-control"  id="userStatus" [(ngModel)]="userStatus" name="userStatus" required>
+        <option value="">Select</option>
+        <option value="Admin">Admin</option>
+        <option value="Manager">Manager</option>
+        <option value="User">User</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!form.valid">Submit</button>
+
+  </form>
+</div>
