@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gp-auth',
+  selector: 'todo-auth',
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.css']
 })
